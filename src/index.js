@@ -83,4 +83,33 @@ const newNumArr=numArr.filter((num)=>{
   return num%2===1;
 })
 console.log(newNumArr)
+
+const nameArr = ["田中", "山田", "木村"];
+const nameArr3=nameArr.map((name,index)=>{
+  console.log(`${index},${name}`);
+})
+console.log(nameArr3)
+
+const nameArr4=nameArr.map((name)=>{
+  if (name!=="山田"){
+    return `${name}さん`;}
+  else {
+    return name;
+  }
+})
+console.log(nameArr4)
+
+const val1 = 1 < 0 ? `trueです` : `False`;
+console.log(val1);
+
+const num="1300";
+console.log(num.toLocaleString())
+
+const val2= typeof num==="number" ? num.toLocaleString():`数字を入力`;
+console.log(val2)
 */
+
+const checkSum = (num1, num2) => {
+  return num1 + num2 > 100 ? "True" : "False";
+};
+console.log(checkSum(100, 10));
