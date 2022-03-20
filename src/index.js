@@ -54,10 +54,33 @@ const arr6=[...arr4];
 console.log(arr6)
 const arr7 = [...arr4 ,...arr5];
 console.log(arr7)
-*/
+
 
 const arr4 = [10, 20];
 const arr5 = [30, 40];
 const arr8 = arr4;
 arr8[0] = 100;
 console.log(arr4);
+
+
+const nameArr = ["田中", "山田", "木村"];
+for (let index = 0; index < nameArr.length; index++) {
+  console.log(nameArr[index]);
+}
+
+const nameArr2=nameArr.map((name)=>{
+  return name;
+})
+console.log(nameArr2)
+
+const nameArr = ["田中", "山田", "木村"];
+nameArr.map((name)=>console.log(name))
+
+
+
+const numArr=[1,2,3,4,4,55];
+const newNumArr=numArr.filter((num)=>{
+  return num%2===1;
+})
+console.log(newNumArr)
+*/
